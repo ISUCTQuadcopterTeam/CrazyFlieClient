@@ -1,0 +1,409 @@
+DEBUG:cflib.crtp:Scanning: <cflib.crtp.radiodriver.RadioDriver instance at 0x00000000025989C8>
+INFO:cflib.crtp.radiodriver:v0.52 dongle with serial N/A found
+DEBUG:cflib.crtp:Scanning: <cflib.crtp.serialdriver.SerialDriver instance at 0x0000000002EA1648>
+DEBUG:cflib.crtp:Scanning: <cflib.crtp.udpdriver.UdpDriver instance at 0x0000000002E39588>
+DEBUG:cflib.crtp:Scanning: <cflib.crtp.usbdriver.UsbDriver instance at 0x0000000002EB5AC8>
+INFO:cflib.drivers.cfusb:Looking for devices....
+DEBUG:cflib.crazyflie:Adding callback on port [5] to [<bound method Log._new_packet_cb of <cflib.crazyflie.log.Log instance at 0x0000000002EE16C8>>]
+DEBUG:cflib.crazyflie:Adding callback on port [0] to [<bound method Console.incoming of <cflib.crazyflie.console.Console instance at 0x0000000002EE1788>>]
+DEBUG:cflib.crazyflie:Adding callback on port [2] to [<bound method _ParamUpdater._new_packet_cb of <_ParamUpdater(Thread-2, initial daemon)>>]
+DEBUG:cflib.crazyflie:Adding callback on port [4] to [<bound method Memory._new_packet_cb of <cflib.crazyflie.mem.Memory instance at 0x0000000002EE1AC8>>]
+INFO:cflib.crazyflie:Callback->Connection initialized[radio://0/10/250K]
+INFO:cflib.crazyflie:We are connected[radio://0/10/250K], request connection setup
+DEBUG:cflib.crazyflie:Sending packet and expecting the (93, 5) pattern back
+DEBUG:cflib.crazyflie:Resending for pattern (93, 5)
+DEBUG:cflib.crazyflie:We want to resend and the pattern is there
+DEBUG:cflib.crazyflie:Resending for pattern (93, 5)
+DEBUG:cflib.crazyflie:We want to resend and the pattern is there
+DEBUG:cflib.crazyflie:Resending for pattern (93, 5)
+DEBUG:cflib.crazyflie:We want to resend and the pattern is there
+DEBUG:cflib.crazyflie:Resending for pattern (93, 5)
+DEBUG:cflib.crazyflie:We want to resend and the pattern is there
+INFO:cflib.crazyflie:Callback->Connected to [radio://0/10/250K]
+DEBUG:cflib.crazyflie.log:Logging reset, continue with TOC download
+DEBUG:cflib.crazyflie.toc:[5]: Start fetching...
+DEBUG:cflib.crazyflie:Adding callback on port [5] to [<bound method TocFetcher._new_packet_cb of <cflib.crazyflie.toc.TocFetcher instance at 0x0000000002EF4608>>]
+DEBUG:cflib.crazyflie:Sending packet and expecting the (92, 1) pattern back
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 1) vs (93, 5, 36, 0)
+DEBUG:cflib.crazyflie:Looking for pattern match on (93, 5) vs (93, 5, 36, 0)
+DEBUG:cflib.crazyflie:Found new longest match (93, 5)
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 1) vs (93, 5, 36, 0)
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 1) vs (93, 5, 36, 0)
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 1) vs (93, 5, 36, 0)
+DEBUG:cflib.crazyflie:Resending for pattern (93, 5)
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 1) vs (92, 1, 37, 78, 197, 75, 227, 8, 64)
+DEBUG:cflib.crazyflie:Found new longest match (92, 1)
+DEBUG:cflib.crazyflie:Resend requested, but no pattern found: %s
+DEBUG:cflib.crazyflie.toc:[5]: Got TOC CRC, 37 items and crc=0xE34BC54E
+DEBUG:cflib.crazyflie.toc:Requesting index 0 on port 5
+DEBUG:cflib.crazyflie:Sending packet and expecting the (92, 0, 0) pattern back
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 0) vs (93, 5, 37, 0)
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 0) vs (92, 0, 0, 7, 112, 109, 0, 118, 98, 97, 116, 0)
+DEBUG:cflib.crazyflie:Found new longest match (92, 0, 0)
+DEBUG:cflib.crazyflie.toc:Added element [0]
+DEBUG:cflib.crazyflie.toc:[5]: More variables, requesting index 1
+DEBUG:cflib.crazyflie.toc:Requesting index 1 on port 5
+DEBUG:cflib.crazyflie:Sending packet and expecting the (92, 0, 1) pattern back
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 1) vs (92, 0, 1, 4, 112, 109, 0, 115, 116, 97, 116, 101, 0)
+DEBUG:cflib.crazyflie:Found new longest match (92, 0, 1)
+DEBUG:cflib.crazyflie.toc:Added element [1]
+DEBUG:cflib.crazyflie.toc:[5]: More variables, requesting index 2
+DEBUG:cflib.crazyflie.toc:Requesting index 2 on port 5
+DEBUG:cflib.crazyflie:Sending packet and expecting the (92, 0, 2) pattern back
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 2) vs (92, 0, 2, 4, 115, 121, 115, 0, 99, 97, 110, 102, 108, 121, 0)
+DEBUG:cflib.crazyflie:Found new longest match (92, 0, 2)
+DEBUG:cflib.crazyflie.toc:Added element [2]
+DEBUG:cflib.crazyflie.toc:[5]: More variables, requesting index 3
+DEBUG:cflib.crazyflie.toc:Requesting index 3 on port 5
+DEBUG:cflib.crazyflie:Sending packet and expecting the (92, 0, 3) pattern back
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 3) vs (92, 0, 3, 7, 97, 99, 99, 0, 120, 0)
+DEBUG:cflib.crazyflie:Found new longest match (92, 0, 3)
+DEBUG:cflib.crazyflie.toc:Added element [3]
+DEBUG:cflib.crazyflie.toc:[5]: More variables, requesting index 4
+DEBUG:cflib.crazyflie.toc:Requesting index 4 on port 5
+DEBUG:cflib.crazyflie:Sending packet and expecting the (92, 0, 4) pattern back
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 4) vs (92, 0, 4, 7, 97, 99, 99, 0, 121, 0)
+DEBUG:cflib.crazyflie:Found new longest match (92, 0, 4)
+DEBUG:cflib.crazyflie.toc:Added element [4]
+DEBUG:cflib.crazyflie.toc:[5]: More variables, requesting index 5
+DEBUG:cflib.crazyflie.toc:Requesting index 5 on port 5
+DEBUG:cflib.crazyflie:Sending packet and expecting the (92, 0, 5) pattern back
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 5) vs (92, 0, 5, 7, 97, 99, 99, 0, 122, 0)
+DEBUG:cflib.crazyflie:Found new longest match (92, 0, 5)
+DEBUG:cflib.crazyflie.toc:Added element [5]
+DEBUG:cflib.crazyflie.toc:[5]: More variables, requesting index 6
+DEBUG:cflib.crazyflie.toc:Requesting index 6 on port 5
+DEBUG:cflib.crazyflie:Sending packet and expecting the (92, 0, 6) pattern back
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 6) vs (92, 0, 6, 7, 97, 99, 99, 0, 122, 119, 0)
+DEBUG:cflib.crazyflie:Found new longest match (92, 0, 6)
+DEBUG:cflib.crazyflie.toc:Added element [6]
+DEBUG:cflib.crazyflie.toc:[5]: More variables, requesting index 7
+DEBUG:cflib.crazyflie.toc:Requesting index 7 on port 5
+DEBUG:cflib.crazyflie:Sending packet and expecting the (92, 0, 7) pattern back
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 7) vs (92, 0, 7, 7, 97, 99, 99, 0, 109, 97, 103, 50, 0)
+DEBUG:cflib.crazyflie:Found new longest match (92, 0, 7)
+DEBUG:cflib.crazyflie.toc:Added element [7]
+DEBUG:cflib.crazyflie.toc:[5]: More variables, requesting index 8
+DEBUG:cflib.crazyflie.toc:Requesting index 8 on port 5
+DEBUG:cflib.crazyflie:Sending packet and expecting the (92, 0, 8) pattern back
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 8) vs (92, 0, 8, 7, 98, 97, 114, 111, 0, 97, 115, 108, 0)
+DEBUG:cflib.crazyflie:Found new longest match (92, 0, 8)
+DEBUG:cflib.crazyflie.toc:Added element [8]
+DEBUG:cflib.crazyflie.toc:[5]: More variables, requesting index 9
+DEBUG:cflib.crazyflie.toc:Requesting index 9 on port 5
+DEBUG:cflib.crazyflie:Sending packet and expecting the (92, 0, 9) pattern back
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 9) vs (92, 0, 9, 7, 98, 97, 114, 111, 0, 97, 115, 108, 82, 97, 119, 0)
+DEBUG:cflib.crazyflie:Found new longest match (92, 0, 9)
+DEBUG:cflib.crazyflie.toc:Added element [9]
+DEBUG:cflib.crazyflie.toc:[5]: More variables, requesting index 10
+DEBUG:cflib.crazyflie.toc:Requesting index 10 on port 5
+DEBUG:cflib.crazyflie:Sending packet and expecting the (92, 0, 10) pattern back
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 10) vs (92, 0, 10, 7, 98, 97, 114, 111, 0, 97, 115, 108, 76, 111, 110, 103, 0)
+DEBUG:cflib.crazyflie:Found new longest match (92, 0, 10)
+DEBUG:cflib.crazyflie.toc:Added element [10]
+DEBUG:cflib.crazyflie.toc:[5]: More variables, requesting index 11
+DEBUG:cflib.crazyflie.toc:Requesting index 11 on port 5
+DEBUG:cflib.crazyflie:Sending packet and expecting the (92, 0, 11) pattern back
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 11) vs (92, 0, 11, 7, 98, 97, 114, 111, 0, 116, 101, 109, 112, 0)
+DEBUG:cflib.crazyflie:Found new longest match (92, 0, 11)
+DEBUG:cflib.crazyflie.toc:Added element [11]
+DEBUG:cflib.crazyflie:Resending for pattern (92, 1)
+DEBUG:cflib.crazyflie.toc:[5]: More variables, requesting index 12
+DEBUG:cflib.crazyflie:Resend requested, but no pattern found: {}
+DEBUG:cflib.crazyflie.toc:Requesting index 12 on port 5
+DEBUG:cflib.crazyflie:Sending packet and expecting the (92, 0, 12) pattern back
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 12) vs (92, 1, 37, 78, 197, 75, 227, 8, 64)
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 12) vs (92, 0, 12, 7, 98, 97, 114, 111, 0, 112, 114, 101, 115, 115, 117, 114, 101, 0)
+DEBUG:cflib.crazyflie:Found new longest match (92, 0, 12)
+DEBUG:cflib.crazyflie.toc:Added element [12]
+DEBUG:cflib.crazyflie.toc:[5]: More variables, requesting index 13
+DEBUG:cflib.crazyflie.toc:Requesting index 13 on port 5
+DEBUG:cflib.crazyflie:Sending packet and expecting the (92, 0, 13) pattern back
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 13) vs (92, 0, 13, 6, 109, 111, 116, 111, 114, 0, 109, 52, 0)
+DEBUG:cflib.crazyflie:Found new longest match (92, 0, 13)
+DEBUG:cflib.crazyflie.toc:Added element [13]
+DEBUG:cflib.crazyflie.toc:[5]: More variables, requesting index 14
+DEBUG:cflib.crazyflie.toc:Requesting index 14 on port 5
+DEBUG:cflib.crazyflie:Sending packet and expecting the (92, 0, 14) pattern back
+DEBUG:cflib.crazyflie:Resending for pattern (92, 0, 0)
+DEBUG:cflib.crazyflie:Resend requested, but no pattern found: {(92, 0, 14): <_Timer(Thread-24, started daemon 1300)>}
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 14) vs (92, 0, 14, 6, 109, 111, 116, 111, 114, 0, 109, 49, 0)
+DEBUG:cflib.crazyflie:Found new longest match (92, 0, 14)
+DEBUG:cflib.crazyflie.toc:Added element [14]
+DEBUG:cflib.crazyflie.toc:[5]: More variables, requesting index 15
+DEBUG:cflib.crazyflie.toc:Requesting index 15 on port 5
+DEBUG:cflib.crazyflie:Sending packet and expecting the (92, 0, 15) pattern back
+DEBUG:cflib.crazyflie:Resending for pattern (92, 0, 1)
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 15) vs (92, 0, 0, 7, 112, 109, 0, 118, 98, 97, 116, 0)
+DEBUG:cflib.crazyflie:Resend requested, but no pattern found: {(92, 0, 15): <_Timer(Thread-25, started daemon 7572)>}
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 15) vs (92, 0, 15, 6, 109, 111, 116, 111, 114, 0, 109, 50, 0)
+DEBUG:cflib.crazyflie:Found new longest match (92, 0, 15)
+DEBUG:cflib.crazyflie.toc:Added element [15]
+DEBUG:cflib.crazyflie.toc:[5]: More variables, requesting index 16
+DEBUG:cflib.crazyflie.toc:Requesting index 16 on port 5
+DEBUG:cflib.crazyflie:Sending packet and expecting the (92, 0, 16) pattern back
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 16) vs (92, 0, 1, 4, 112, 109, 0, 115, 116, 97, 116, 101, 0)
+DEBUG:cflib.crazyflie:Resending for pattern (92, 0, 2)
+DEBUG:cflib.crazyflie:Resend requested, but no pattern found: {(92, 0, 16): <_Timer(Thread-26, started daemon 6720)>}
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 16) vs (92, 0, 16, 6, 109, 111, 116, 111, 114, 0, 109, 51, 0)
+DEBUG:cflib.crazyflie:Found new longest match (92, 0, 16)
+DEBUG:cflib.crazyflie.toc:Added element [16]
+DEBUG:cflib.crazyflie.toc:[5]: More variables, requesting index 17
+DEBUG:cflib.crazyflie.toc:Requesting index 17 on port 5
+DEBUG:cflib.crazyflie:Sending packet and expecting the (92, 0, 17) pattern back
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 17) vs (92, 0, 2, 4, 115, 121, 115, 0, 99, 97, 110, 102, 108, 121, 0)
+DEBUG:cflib.crazyflie:Resending for pattern (92, 0, 3)
+DEBUG:cflib.crazyflie:Resend requested, but no pattern found: {(92, 0, 17): <_Timer(Thread-27, started daemon 4080)>}
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 17) vs (92, 0, 17, 7, 115, 116, 97, 98, 105, 108, 105, 122, 101, 114, 0, 114, 111, 108, 108, 0)
+DEBUG:cflib.crazyflie:Found new longest match (92, 0, 17)
+DEBUG:cflib.crazyflie.toc:Added element [17]
+DEBUG:cflib.crazyflie.toc:[5]: More variables, requesting index 18
+DEBUG:cflib.crazyflie.toc:Requesting index 18 on port 5
+DEBUG:cflib.crazyflie:Sending packet and expecting the (92, 0, 18) pattern back
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 18) vs (92, 0, 3, 7, 97, 99, 99, 0, 120, 0)
+DEBUG:cflib.crazyflie:Resending for pattern (92, 0, 4)
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 18) vs (92, 0, 18, 7, 115, 116, 97, 98, 105, 108, 105, 122, 101, 114, 0, 112, 105, 116, 99, 104, 0)
+DEBUG:cflib.crazyflie:Resend requested, but no pattern found: {(92, 0, 18): <_Timer(Thread-28, started daemon 6472)>}
+DEBUG:cflib.crazyflie:Found new longest match (92, 0, 18)
+DEBUG:cflib.crazyflie.toc:Added element [18]
+DEBUG:cflib.crazyflie.toc:[5]: More variables, requesting index 19
+DEBUG:cflib.crazyflie.toc:Requesting index 19 on port 5
+DEBUG:cflib.crazyflie:Sending packet and expecting the (92, 0, 19) pattern back
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 19) vs (92, 0, 4, 7, 97, 99, 99, 0, 121, 0)
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 19) vs (92, 0, 19, 7, 115, 116, 97, 98, 105, 108, 105, 122, 101, 114, 0, 121, 97, 119, 0)
+DEBUG:cflib.crazyflie:Resending for pattern (92, 0, 5)
+DEBUG:cflib.crazyflie:Found new longest match (92, 0, 19)
+DEBUG:cflib.crazyflie:Resend requested, but no pattern found: %s
+DEBUG:cflib.crazyflie.toc:Added element [19]
+DEBUG:cflib.crazyflie.toc:[5]: More variables, requesting index 20
+DEBUG:cflib.crazyflie.toc:Requesting index 20 on port 5
+DEBUG:cflib.crazyflie:Sending packet and expecting the (92, 0, 20) pattern back
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 20) vs (92, 0, 5, 7, 97, 99, 99, 0, 122, 0)
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 20) vs (92, 0, 20, 2, 115, 116, 97, 98, 105, 108, 105, 122, 101, 114, 0, 116, 104, 114, 117, 115, 116, 0)
+DEBUG:cflib.crazyflie:Resending for pattern (92, 0, 6)
+DEBUG:cflib.crazyflie:Found new longest match (92, 0, 20)
+DEBUG:cflib.crazyflie:Resend requested, but no pattern found: {}
+DEBUG:cflib.crazyflie.toc:Added element [20]
+DEBUG:cflib.crazyflie.toc:[5]: More variables, requesting index 21
+DEBUG:cflib.crazyflie.toc:Requesting index 21 on port 5
+DEBUG:cflib.crazyflie:Sending packet and expecting the (92, 0, 21) pattern back
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 21) vs (92, 0, 6, 7, 97, 99, 99, 0, 122, 119, 0)
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 21) vs (92, 0, 21, 7, 97, 108, 116, 72, 111, 108, 100, 0, 101, 114, 114, 0)
+DEBUG:cflib.crazyflie:Resending for pattern (92, 0, 7)
+DEBUG:cflib.crazyflie:Found new longest match (92, 0, 21)
+DEBUG:cflib.crazyflie:Resend requested, but no pattern found: {}
+DEBUG:cflib.crazyflie.toc:Added element [21]
+DEBUG:cflib.crazyflie.toc:[5]: More variables, requesting index 22
+DEBUG:cflib.crazyflie.toc:Requesting index 22 on port 5
+DEBUG:cflib.crazyflie:Sending packet and expecting the (92, 0, 22) pattern back
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 22) vs (92, 0, 7, 7, 97, 99, 99, 0, 109, 97, 103, 50, 0)
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 22) vs (92, 0, 22, 7, 97, 108, 116, 72, 111, 108, 100, 0, 116, 97, 114, 103, 101, 116, 0)
+DEBUG:cflib.crazyflie:Found new longest match (92, 0, 22)
+DEBUG:cflib.crazyflie.toc:Added element [22]
+DEBUG:cflib.crazyflie.toc:[5]: More variables, requesting index 23
+DEBUG:cflib.crazyflie:Resending for pattern (92, 0, 8)
+DEBUG:cflib.crazyflie.toc:Requesting index 23 on port 5
+DEBUG:cflib.crazyflie:Resend requested, but no pattern found: {}
+DEBUG:cflib.crazyflie:Sending packet and expecting the (92, 0, 23) pattern back
+DEBUG:cflib.crazyflie:Resending for pattern (92, 0, 9)
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 23) vs (92, 0, 8, 7, 98, 97, 114, 111, 0, 97, 115, 108, 0)
+DEBUG:cflib.crazyflie:Resend requested, but no pattern found: {(92, 0, 23): <_Timer(Thread-33, started daemon 2132)>}
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 23) vs (92, 0, 23, 7, 97, 108, 116, 72, 111, 108, 100, 0, 122, 83, 112, 101, 101, 100, 0)
+DEBUG:cflib.crazyflie:Found new longest match (92, 0, 23)
+DEBUG:cflib.crazyflie.toc:Added element [23]
+DEBUG:cflib.crazyflie.toc:[5]: More variables, requesting index 24
+DEBUG:cflib.crazyflie.toc:Requesting index 24 on port 5
+DEBUG:cflib.crazyflie:Sending packet and expecting the (92, 0, 24) pattern back
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 24) vs (92, 0, 9, 7, 98, 97, 114, 111, 0, 97, 115, 108, 82, 97, 119, 0)
+DEBUG:cflib.crazyflie:Resending for pattern (92, 0, 10)
+DEBUG:cflib.crazyflie:Resend requested, but no pattern found: {(92, 0, 24): <_Timer(Thread-34, started daemon 5292)>}
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 24) vs (92, 0, 24, 7, 97, 108, 116, 72, 111, 108, 100, 0, 118, 83, 112, 101, 101, 100, 0)
+DEBUG:cflib.crazyflie:Found new longest match (92, 0, 24)
+DEBUG:cflib.crazyflie.toc:Added element [24]
+DEBUG:cflib.crazyflie.toc:[5]: More variables, requesting index 25
+DEBUG:cflib.crazyflie.toc:Requesting index 25 on port 5
+DEBUG:cflib.crazyflie:Sending packet and expecting the (92, 0, 25) pattern back
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 25) vs (92, 0, 10, 7, 98, 97, 114, 111, 0, 97, 115, 108, 76, 111, 110, 103, 0)
+DEBUG:cflib.crazyflie:Resending for pattern (92, 0, 11)
+DEBUG:cflib.crazyflie:Resend requested, but no pattern found: {(92, 0, 25): <_Timer(Thread-35, started daemon 7520)>}
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 25) vs (92, 0, 25, 7, 97, 108, 116, 72, 111, 108, 100, 0, 118, 83, 112, 101, 101, 100, 65, 83, 76, 0)
+DEBUG:cflib.crazyflie:Found new longest match (92, 0, 25)
+DEBUG:cflib.crazyflie.toc:Added element [25]
+DEBUG:cflib.crazyflie.toc:[5]: More variables, requesting index 26
+DEBUG:cflib.crazyflie.toc:Requesting index 26 on port 5
+DEBUG:cflib.crazyflie:Sending packet and expecting the (92, 0, 26) pattern back
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 26) vs (92, 0, 11, 7, 98, 97, 114, 111, 0, 116, 101, 109, 112, 0)
+DEBUG:cflib.crazyflie:Resending for pattern (92, 0, 12)
+DEBUG:cflib.crazyflie:Resend requested, but no pattern found: {(92, 0, 26): <_Timer(Thread-36, started daemon 7524)>}
+DEBUG:cflib.crazyflie:Resending for pattern (92, 0, 13)
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 26) vs (92, 0, 12, 7, 98, 97, 114, 111, 0, 112, 114, 101, 115, 115, 117, 114, 101, 0)
+DEBUG:cflib.crazyflie:Resend requested, but no pattern found: {(92, 0, 26): <_Timer(Thread-36, started daemon 7524)>}
+DEBUG:cflib.crazyflie:Resending for pattern (92, 0, 14)
+DEBUG:cflib.crazyflie:Resend requested, but no pattern found: {(92, 0, 26): <_Timer(Thread-36, started daemon 7524)>}
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 26) vs (92, 0, 13, 6, 109, 111, 116, 111, 114, 0, 109, 52, 0)
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 26) vs (92, 0, 14, 6, 109, 111, 116, 111, 114, 0, 109, 49, 0)
+DEBUG:cflib.crazyflie:Resending for pattern (92, 0, 15)
+DEBUG:cflib.crazyflie:Resend requested, but no pattern found: {(92, 0, 26): <_Timer(Thread-36, started daemon 7524)>}
+DEBUG:cflib.crazyflie:Resending for pattern (92, 0, 16)
+DEBUG:cflib.crazyflie:Resend requested, but no pattern found: {(92, 0, 26): <_Timer(Thread-36, started daemon 7524)>}
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 26) vs (92, 0, 15, 6, 109, 111, 116, 111, 114, 0, 109, 50, 0)
+DEBUG:cflib.crazyflie:Resending for pattern (92, 0, 17)
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 26) vs (92, 0, 16, 6, 109, 111, 116, 111, 114, 0, 109, 51, 0)
+DEBUG:cflib.crazyflie:Resend requested, but no pattern found: {(92, 0, 26): <_Timer(Thread-36, started daemon 7524)>}
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 26) vs (92, 0, 17, 7, 115, 116, 97, 98, 105, 108, 105, 122, 101, 114, 0, 114, 111, 108, 108, 0)
+DEBUG:cflib.crazyflie:Resending for pattern (92, 0, 18)
+DEBUG:cflib.crazyflie:Resend requested, but no pattern found: {(92, 0, 26): <_Timer(Thread-36, started daemon 7524)>}
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 26) vs (92, 0, 18, 7, 115, 116, 97, 98, 105, 108, 105, 122, 101, 114, 0, 112, 105, 116, 99, 104, 0)
+DEBUG:cflib.crazyflie:Resending for pattern (92, 0, 19)
+DEBUG:cflib.crazyflie:Resend requested, but no pattern found: {(92, 0, 26): <_Timer(Thread-36, started daemon 7524)>}
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 26) vs (92, 0, 19, 7, 115, 116, 97, 98, 105, 108, 105, 122, 101, 114, 0, 121, 97, 119, 0)
+DEBUG:cflib.crazyflie:Resending for pattern (92, 0, 20)
+DEBUG:cflib.crazyflie:Resend requested, but no pattern found: {(92, 0, 26): <_Timer(Thread-36, started daemon 7524)>}
+DEBUG:cflib.crazyflie:Resending for pattern (92, 0, 21)
+DEBUG:cflib.crazyflie:Resend requested, but no pattern found: {(92, 0, 26): <_Timer(Thread-36, started daemon 7524)>}
+DEBUG:cflib.crazyflie:Resending for pattern (92, 0, 22)
+DEBUG:cflib.crazyflie:Resend requested, but no pattern found: {(92, 0, 26): <_Timer(Thread-36, started daemon 7524)>}
+DEBUG:cflib.crazyflie:Resending for pattern (92, 0, 23)
+DEBUG:cflib.crazyflie:Resend requested, but no pattern found: {(92, 0, 26): <_Timer(Thread-36, started daemon 7524)>}
+DEBUG:cflib.crazyflie:Resending for pattern (92, 0, 24)
+DEBUG:cflib.crazyflie:Resend requested, but no pattern found: {(92, 0, 26): <_Timer(Thread-36, started daemon 7524)>}
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 26) vs (92, 0, 21, 7, 97, 108, 116, 72, 111, 108, 100, 0, 101, 114, 114, 0)
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 26) vs (92, 0, 22, 7, 97, 108, 116, 72, 111, 108, 100, 0, 116, 97, 114, 103, 101, 116, 0)
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 26) vs (92, 0, 23, 7, 97, 108, 116, 72, 111, 108, 100, 0, 122, 83, 112, 101, 101, 100, 0)
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 26) vs (92, 0, 24, 7, 97, 108, 116, 72, 111, 108, 100, 0, 118, 83, 112, 101, 101, 100, 0)
+DEBUG:cflib.crazyflie:Resending for pattern (92, 0, 25)
+DEBUG:cflib.crazyflie:Resend requested, but no pattern found: {(92, 0, 26): <_Timer(Thread-36, started daemon 7524)>}
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 26) vs (92, 0, 25, 7, 97, 108, 116, 72, 111, 108, 100, 0, 118, 83, 112, 101, 101, 100, 65, 83, 76, 0)
+DEBUG:cflib.crazyflie:Resending for pattern (92, 0, 26)
+DEBUG:cflib.crazyflie:We want to resend and the pattern is there
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 26) vs (92, 0, 26, 7, 97, 108, 116, 72, 111, 108, 100, 0, 118, 83, 112, 101, 101, 100, 65, 99, 99, 0)
+DEBUG:cflib.crazyflie:Found new longest match (92, 0, 26)
+DEBUG:cflib.crazyflie.toc:Added element [26]
+DEBUG:cflib.crazyflie.toc:[5]: More variables, requesting index 27
+DEBUG:cflib.crazyflie.toc:Requesting index 27 on port 5
+DEBUG:cflib.crazyflie:Sending packet and expecting the (92, 0, 27) pattern back
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 27) vs (92, 0, 27, 7, 103, 121, 114, 111, 0, 120, 0)
+DEBUG:cflib.crazyflie:Found new longest match (92, 0, 27)
+DEBUG:cflib.crazyflie.toc:Added element [27]
+DEBUG:cflib.crazyflie.toc:[5]: More variables, requesting index 28
+DEBUG:cflib.crazyflie.toc:Requesting index 28 on port 5
+DEBUG:cflib.crazyflie:Sending packet and expecting the (92, 0, 28) pattern back
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 28) vs (92, 0, 28, 7, 103, 121, 114, 111, 0, 121, 0)
+DEBUG:cflib.crazyflie:Found new longest match (92, 0, 28)
+DEBUG:cflib.crazyflie.toc:Added element [28]
+DEBUG:cflib.crazyflie.toc:[5]: More variables, requesting index 29
+DEBUG:cflib.crazyflie.toc:Requesting index 29 on port 5
+DEBUG:cflib.crazyflie:Sending packet and expecting the (92, 0, 29) pattern back
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 29) vs (92, 0, 29, 7, 103, 121, 114, 111, 0, 122, 0)
+DEBUG:cflib.crazyflie:Found new longest match (92, 0, 29)
+DEBUG:cflib.crazyflie.toc:Added element [29]
+DEBUG:cflib.crazyflie.toc:[5]: More variables, requesting index 30
+DEBUG:cflib.crazyflie.toc:Requesting index 30 on port 5
+DEBUG:cflib.crazyflie:Sending packet and expecting the (92, 0, 30) pattern back
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 30) vs (92, 0, 30, 7, 118, 112, 105, 100, 0, 112, 105, 100, 0)
+DEBUG:cflib.crazyflie:Found new longest match (92, 0, 30)
+DEBUG:cflib.crazyflie.toc:Added element [30]
+DEBUG:cflib.crazyflie.toc:[5]: More variables, requesting index 31
+DEBUG:cflib.crazyflie.toc:Requesting index 31 on port 5
+DEBUG:cflib.crazyflie:Sending packet and expecting the (92, 0, 31) pattern back
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 31) vs (92, 0, 31, 7, 118, 112, 105, 100, 0, 112, 0)
+DEBUG:cflib.crazyflie:Found new longest match (92, 0, 31)
+DEBUG:cflib.crazyflie.toc:Added element [31]
+DEBUG:cflib.crazyflie.toc:[5]: More variables, requesting index 32
+DEBUG:cflib.crazyflie.toc:Requesting index 32 on port 5
+DEBUG:cflib.crazyflie:Sending packet and expecting the (92, 0, 32) pattern back
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 32) vs (92, 0, 32, 7, 118, 112, 105, 100, 0, 105, 0)
+DEBUG:cflib.crazyflie:Found new longest match (92, 0, 32)
+DEBUG:cflib.crazyflie.toc:Added element [32]
+DEBUG:cflib.crazyflie.toc:[5]: More variables, requesting index 33
+DEBUG:cflib.crazyflie.toc:Requesting index 33 on port 5
+DEBUG:cflib.crazyflie:Sending packet and expecting the (92, 0, 33) pattern back
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 33) vs (92, 0, 33, 7, 118, 112, 105, 100, 0, 100, 0)
+DEBUG:cflib.crazyflie:Found new longest match (92, 0, 33)
+DEBUG:cflib.crazyflie.toc:Added element [33]
+DEBUG:cflib.crazyflie.toc:[5]: More variables, requesting index 34
+DEBUG:cflib.crazyflie.toc:Requesting index 34 on port 5
+DEBUG:cflib.crazyflie:Sending packet and expecting the (92, 0, 34) pattern back
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 34) vs (92, 0, 34, 7, 109, 97, 103, 0, 120, 0)
+DEBUG:cflib.crazyflie:Found new longest match (92, 0, 34)
+DEBUG:cflib.crazyflie.toc:Added element [34]
+DEBUG:cflib.crazyflie.toc:[5]: More variables, requesting index 35
+DEBUG:cflib.crazyflie.toc:Requesting index 35 on port 5
+DEBUG:cflib.crazyflie:Sending packet and expecting the (92, 0, 35) pattern back
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 35) vs (92, 0, 35, 7, 109, 97, 103, 0, 121, 0)
+DEBUG:cflib.crazyflie:Found new longest match (92, 0, 35)
+DEBUG:cflib.crazyflie.toc:Added element [35]
+DEBUG:cflib.crazyflie.toc:[5]: More variables, requesting index 36
+DEBUG:cflib.crazyflie.toc:Requesting index 36 on port 5
+DEBUG:cflib.crazyflie:Sending packet and expecting the (92, 0, 36) pattern back
+DEBUG:cflib.crazyflie:Looking for pattern match on (92, 0, 36) vs (92, 0, 36, 7, 109, 97, 103, 0, 122, 0)
+DEBUG:cflib.crazyflie:Found new longest match (92, 0, 36)
+DEBUG:cflib.crazyflie.toc:Added element [36]
+WARNING:cflib.crazyflie.toccache:Could not save cache, no writable directory
+DEBUG:cflib.crazyflie:Removing callback on port [5] to [<bound method TocFetcher._new_packet_cb of <cflib.crazyflie.toc.TocFetcher instance at 0x0000000002EF4608>>]
+DEBUG:cflib.crazyflie.toc:[5]: Done!
+INFO:cflib.crazyflie:Log TOC finished updating
+INFO:cflib.crazyflie.mem:Requesting number of memories
+DEBUG:cflib.crazyflie:Sending packet and expecting the (76, 1) pattern back
+DEBUG:cflib.crazyflie:Resending for pattern (92, 0, 26)
+DEBUG:cflib.crazyflie:Resend requested, but no pattern found: {(76, 1): <_Timer(Thread-48, started daemon 7864)>}
+DEBUG:cflib.crazyflie:Resending for pattern (92, 0, 27)
+DEBUG:cflib.crazyflie:Resend requested, but no pattern found: {(76, 1): <_Timer(Thread-48, started daemon 7864)>}
+DEBUG:cflib.crazyflie:Looking for pattern match on (76, 1) vs (92, 0, 26, 7, 97, 108, 116, 72, 111, 108, 100, 0, 118, 83, 112, 101, 101, 100, 65, 99, 99, 0)
+DEBUG:cflib.crazyflie:Looking for pattern match on (76, 1) vs (92, 0, 27, 7, 103, 121, 114, 111, 0, 120, 0)
+DEBUG:cflib.crazyflie:Resending for pattern (92, 0, 28)
+DEBUG:cflib.crazyflie:Resend requested, but no pattern found: {(76, 1): <_Timer(Thread-48, started daemon 7864)>}
+DEBUG:cflib.crazyflie:Looking for pattern match on (76, 1) vs (92, 0, 28, 7, 103, 121, 114, 111, 0, 121, 0)
+DEBUG:cflib.crazyflie:Resending for pattern (92, 0, 29)
+DEBUG:cflib.crazyflie:Resend requested, but no pattern found: {(76, 1): <_Timer(Thread-48, started daemon 7864)>}
+DEBUG:cflib.crazyflie:Resending for pattern (92, 0, 30)
+DEBUG:cflib.crazyflie:Looking for pattern match on (76, 1) vs (92, 0, 29, 7, 103, 121, 114, 111, 0, 122, 0)
+DEBUG:cflib.crazyflie:Resend requested, but no pattern found: {(76, 1): <_Timer(Thread-48, started daemon 7864)>}
+DEBUG:cflib.crazyflie:Looking for pattern match on (76, 1) vs (92, 0, 30, 7, 118, 112, 105, 100, 0, 112, 105, 100, 0)
+DEBUG:cflib.crazyflie:Resending for pattern (92, 0, 31)
+DEBUG:cflib.crazyflie:Resend requested, but no pattern found: {(76, 1): <_Timer(Thread-48, started daemon 7864)>}
+DEBUG:cflib.crazyflie:Looking for pattern match on (76, 1) vs (92, 0, 31, 7, 118, 112, 105, 100, 0, 112, 0)
+DEBUG:cflib.crazyflie:Resending for pattern (92, 0, 32)
+DEBUG:cflib.crazyflie:Resend requested, but no pattern found: {(76, 1): <_Timer(Thread-48, started daemon 7864)>}
+DEBUG:cflib.crazyflie:Looking for pattern match on (76, 1) vs (92, 0, 32, 7, 118, 112, 105, 100, 0, 105, 0)
+DEBUG:cflib.crazyflie:Resending for pattern (92, 0, 33)
+DEBUG:cflib.crazyflie:Resend requested, but no pattern found: {(76, 1): <_Timer(Thread-48, started daemon 7864)>}
+DEBUG:cflib.crazyflie:Resending for pattern (92, 0, 34)
+DEBUG:cflib.crazyflie:Resend requested, but no pattern found: {(76, 1): <_Timer(Thread-48, started daemon 7864)>}
+DEBUG:cflib.crazyflie:Looking for pattern match on (76, 1) vs (92, 0, 33, 7, 118, 112, 105, 100, 0, 100, 0)
+DEBUG:cflib.crazyflie:Looking for pattern match on (76, 1) vs (92, 0, 34, 7, 109, 97, 103, 0, 120, 0)
+DEBUG:cflib.crazyflie:Resending for pattern (92, 0, 35)
+DEBUG:cflib.crazyflie:Resend requested, but no pattern found: {(76, 1): <_Timer(Thread-48, started daemon 7864)>}
+DEBUG:cflib.crazyflie:Resending for pattern (92, 0, 36)
+DEBUG:cflib.crazyflie:Resend requested, but no pattern found: {(76, 1): <_Timer(Thread-48, started daemon 7864)>}
+DEBUG:cflib.crazyflie:Resending for pattern (76, 1)
+DEBUG:cflib.crazyflie:We want to resend and the pattern is there
+DEBUG:cflib.crazyflie:Looking for pattern match on (76, 1) vs (92, 0, 36, 7, 109, 97, 103, 0, 122, 0)
+DEBUG:cflib.crazyflie:Resending for pattern (76, 1)
+DEBUG:cflib.crazyflie:We want to resend and the pattern is there
+DEBUG:cflib.crazyflie:Resending for pattern (76, 1)
+DEBUG:cflib.crazyflie:We want to resend and the pattern is there
+DEBUG:cflib.crazyflie:Resending for pattern (76, 1)
+DEBUG:cflib.crazyflie:We want to resend and the pattern is there
+DEBUG:cflib.crazyflie:Resending for pattern (76, 1)
+DEBUG:cflib.crazyflie:We want to resend and the pattern is there
+DEBUG:cflib.crazyflie:Resending for pattern (76, 1)
+DEBUG:cflib.crazyflie:We want to resend and the pattern is there
+DEBUG:cflib.crazyflie:Resending for pattern (76, 1)
+DEBUG:cflib.crazyflie:We want to resend and the pattern is there
+DEBUG:cflib.crazyflie:Resending for pattern (76, 1)
+DEBUG:cflib.crazyflie:We want to resend and the pattern is there
+DEBUG:cflib.crazyflie:Resending for pattern (76, 1)
+DEBUG:cflib.crazyflie:We want to resend and the pattern is there
+DEBUG:cflib.crazyflie:Resending for pattern (76, 1)
+DEBUG:cflib.crazyflie:We want to resend and the pattern is there
+DEBUG:cflib.crazyflie:Resending for pattern (76, 1)
+DEBUG:cflib.crazyflie:We want to resend and the pattern is there
+DEBUG:cflib.crazyflie:Resending for pattern (76, 1)
+DEBUG:cflib.crazyflie:We want to resend and the pattern is there
+DEBUG:cflib.crazyflie:Resending for pattern (76, 1)
+DEBUG:cflib.crazyflie:We want to resend and the pattern is there
+DEBUG:cflib.crazyflie:Resending for pattern (76, 1)
+DEBUG:cflib.crazyflie:We want to resend and the pattern is there
+DEBUG:cflib.crazyflie:Resending for pattern (76, 1)
+DEBUG:cflib.crazyflie:We want to resend and the pattern is there
